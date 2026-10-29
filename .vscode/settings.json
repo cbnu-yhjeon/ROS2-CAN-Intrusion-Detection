@@ -1,0 +1,4 @@
+{
+    "ros.distro": "humble",
+    "cmake.sourceDirectory": "/home/yhjeon/ROS2-CAN-Intrusion-Detection/ros2_ws/src/can_ids_msgs"
+}
