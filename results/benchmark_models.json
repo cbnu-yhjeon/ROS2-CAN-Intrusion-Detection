@@ -1,0 +1,230 @@
+{
+  "feature_us_per_msg": 1.1448027000000138,
+  "rows": [
+    {
+      "model": "xgb",
+      "backend": "native",
+      "batch": 1,
+      "call_p50_ms": 0.08222449999095716,
+      "call_p99_ms": 0.23256702997656475,
+      "per_msg_us": 93.44090399940796,
+      "max_fps": 10701.951256874998
+    },
+    {
+      "model": "xgb",
+      "backend": "native",
+      "batch": 8,
+      "call_p50_ms": 0.10086199999648215,
+      "call_p99_ms": 0.2973141400076429,
+      "per_msg_us": 15.15594512492946,
+      "max_fps": 65980.70867617069
+    },
+    {
+      "model": "xgb",
+      "backend": "native",
+      "batch": 32,
+      "call_p50_ms": 0.13907300001392287,
+      "call_p99_ms": 0.40277859999832794,
+      "per_msg_us": 4.917190000004723,
+      "max_fps": 203368.18386091234
+    },
+    {
+      "model": "xgb",
+      "backend": "native",
+      "batch": 128,
+      "call_p50_ms": 0.2531214999947906,
+      "call_p99_ms": 0.46164024999768477,
+      "per_msg_us": 2.074924429086044,
+      "max_fps": 481945.26315374137
+    },
+    {
+      "model": "xgb",
+      "backend": "native",
+      "batch": 512,
+      "call_p50_ms": 0.7262820000164538,
+      "call_p99_ms": 1.0468548600005076,
+      "per_msg_us": 1.4859236778825435,
+      "max_fps": 672982.0749777743
+    },
+    {
+      "model": "iforest",
+      "backend": "onnx",
+      "batch": 1,
+      "call_p50_ms": 1.0617579999916416,
+      "call_p99_ms": 2.4455079099965356,
+      "per_msg_us": 1144.9718525002909,
+      "max_fps": 873.3839157847297
+    },
+    {
+      "model": "iforest",
+      "backend": "onnx",
+      "batch": 8,
+      "call_p50_ms": 1.2815865000135318,
+      "call_p99_ms": 2.79290190998438,
+      "per_msg_us": 172.44144775004423,
+      "max_fps": 5799.069846882236
+    },
+    {
+      "model": "iforest",
+      "backend": "onnx",
+      "batch": 32,
+      "call_p50_ms": 2.6631830000098944,
+      "call_p99_ms": 6.03148955998563,
+      "per_msg_us": 92.64581380000152,
+      "max_fps": 10793.795844448436
+    },
+    {
+      "model": "iforest",
+      "backend": "onnx",
+      "batch": 128,
+      "call_p50_ms": 5.9813120000029585,
+      "call_p99_ms": 12.107459300001711,
+      "per_msg_us": 49.572595853370075,
+      "max_fps": 20172.435652913613
+    },
+    {
+      "model": "iforest",
+      "backend": "onnx",
+      "batch": 512,
+      "call_p50_ms": 32.95681600002354,
+      "call_p99_ms": 53.92194469999936,
+      "per_msg_us": 56.18355749198587,
+      "max_fps": 17798.801724911096
+    },
+    {
+      "model": "lstm",
+      "backend": "onnx",
+      "batch": 1,
+      "call_p50_ms": 0.08553249999465606,
+      "call_p99_ms": 0.6325654399992683,
+      "per_msg_us": 121.92176299977575,
+      "max_fps": 8201.981134425027
+    },
+    {
+      "model": "lstm",
+      "backend": "onnx",
+      "batch": 8,
+      "call_p50_ms": 0.25003649999177924,
+      "call_p99_ms": 4.82513455999964,
+      "per_msg_us": 58.0146616875048,
+      "max_fps": 17237.02200292896
+    },
+    {
+      "model": "lstm",
+      "backend": "onnx",
+      "batch": 32,
+      "call_p50_ms": 0.7585109999865836,
+      "call_p99_ms": 6.234743520001302,
+      "per_msg_us": 30.98677299997945,
+      "max_fps": 32271.8341790758
+    },
+    {
+      "model": "lstm",
+      "backend": "onnx",
+      "batch": 128,
+      "call_p50_ms": 3.7593079999851398,
+      "call_p99_ms": 8.653444400002275,
+      "per_msg_us": 32.12392422876119,
+      "max_fps": 31129.447102377362
+    },
+    {
+      "model": "lstm",
+      "backend": "onnx",
+      "batch": 512,
+      "call_p50_ms": 16.489376999999195,
+      "call_p99_ms": 20.330242760008446,
+      "per_msg_us": 32.60777759415362,
+      "max_fps": 30667.5300735397
+    },
+    {
+      "model": "lstm",
+      "backend": "torchscript",
+      "batch": 1,
+      "call_p50_ms": 0.3131230000121832,
+      "call_p99_ms": 1.6631645500001464,
+      "per_msg_us": 400.23209400025905,
+      "max_fps": 2498.5502536919307
+    },
+    {
+      "model": "lstm",
+      "backend": "torchscript",
+      "batch": 8,
+      "call_p50_ms": 0.4882534999950394,
+      "call_p99_ms": 1.5058107600020771,
+      "per_msg_us": 70.13439550000555,
+      "max_fps": 14258.339191073812
+    },
+    {
+      "model": "lstm",
+      "backend": "torchscript",
+      "batch": 32,
+      "call_p50_ms": 1.1045109999940905,
+      "call_p99_ms": 2.3623336399907653,
+      "per_msg_us": 37.441737500012096,
+      "max_fps": 26708.162248070803
+    },
+    {
+      "model": "lstm",
+      "backend": "torchscript",
+      "batch": 128,
+      "call_p50_ms": 3.557023500022183,
+      "call_p99_ms": 5.445250850006287,
+      "per_msg_us": 29.08677493990295,
+      "max_fps": 34379.885775103285
+    },
+    {
+      "model": "lstm",
+      "backend": "torchscript",
+      "batch": 512,
+      "call_p50_ms": 13.829473000015469,
+      "call_p99_ms": 16.438952320000904,
+      "per_msg_us": 27.366183794072732,
+      "max_fps": 36541.448655204564
+    },
+    {
+      "model": "ensemble",
+      "backend": "onnx",
+      "batch": 1,
+      "call_p50_ms": 0.10164300000781168,
+      "call_p99_ms": 0.49564585000098305,
+      "per_msg_us": 168.56552850003936,
+      "max_fps": 5932.411026728792
+    },
+    {
+      "model": "ensemble",
+      "backend": "onnx",
+      "batch": 8,
+      "call_p50_ms": 0.34534600000313276,
+      "call_p99_ms": 0.7141401699956873,
+      "per_msg_us": 36.80102587501288,
+      "max_fps": 27173.1555363781
+    },
+    {
+      "model": "ensemble",
+      "backend": "onnx",
+      "batch": 32,
+      "call_p50_ms": 0.6199629999912304,
+      "call_p99_ms": 1.0605408000037637,
+      "per_msg_us": 14.177395100027468,
+      "max_fps": 70534.81919242433
+    },
+    {
+      "model": "ensemble",
+      "backend": "onnx",
+      "batch": 128,
+      "call_p50_ms": 1.7771094999972092,
+      "call_p99_ms": 2.890152250007816,
+      "per_msg_us": 9.216541516425643,
+      "max_fps": 108500.5691362436
+    },
+    {
+      "model": "ensemble",
+      "backend": "onnx",
+      "batch": 512,
+      "call_p50_ms": 6.051719999987881,
+      "call_p99_ms": 9.005495279994305,
+      "per_msg_us": 8.683945112180183,
+      "max_fps": 115155.03461639694
+    }
+  ]
+}

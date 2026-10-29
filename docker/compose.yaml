@@ -1,0 +1,29 @@
+# 한 줄 시연:  docker compose -f docker/compose.yaml up --build
+# 사전 조건 :  호스트에서 sudo modprobe vcan (컨테이너는 자기 네트워크 네임스페이스에 vcan0을 만든다)
+services:
+  ids:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: ros2-can-ids:latest
+    cap_add: [NET_ADMIN]
+    ports: ["8765:8765"]          # Foxglove WebSocket
+    volumes:
+      - ../data:/opt/can_ids/data       # HCRL 데이터 (없으면 자동 다운로드)
+      - ../results:/opt/can_ids/results
+    environment:
+      MODEL: ${MODEL:-xgb}              # xgb | iforest | lstm | ensemble
+      BATCH_MS: ${BATCH_MS:-1.0}        # 0 = 메시지 단위
+      INPUT: ${INPUT:-socketcan}        # socketcan | topic
+      BRIDGE: ${BRIDGE:-ros2_socketcan} # INPUT=topic 일 때: ros2_socketcan | python
+      SPEED: ${SPEED:-1}
+    command: ["demo"]
+
+  experiments:
+    profiles: ["experiments"]           # docker compose -f docker/compose.yaml --profile experiments run experiments
+    image: ros2-can-ids:latest
+    cap_add: [NET_ADMIN]
+    volumes:
+      - ../data:/opt/can_ids/data
+      - ../results:/opt/can_ids/results
+    command: ["experiments"]

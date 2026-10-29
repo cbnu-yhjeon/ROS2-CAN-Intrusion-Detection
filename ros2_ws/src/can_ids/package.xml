@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>can_ids</name>
+  <version>0.1.0</version>
+  <description>Real-time CAN bus intrusion detection node (XGBoost / Isolation Forest / LSTM-AE)</description>
+  <maintainer email="yhjeon@avgenius.kr">yhjeon</maintainer>
+  <license>MIT</license>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>can_msgs</exec_depend>
+  <exec_depend>can_ids_msgs</exec_depend>
+  <exec_depend>diagnostic_msgs</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <test_depend>python3-pytest</test_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>
